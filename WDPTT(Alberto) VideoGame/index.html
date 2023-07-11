@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Pang</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        /* Estilos adicionales para la pantalla de inicio */
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #main-canvas {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        #title-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .title {
+            font-size: 150px;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+
+        .start-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 100px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .start-button:hover {
+            background-color: #CCCCCC;
+        }
+    </style>
+</head>
+<body>
+    <div id="title-container">
+        <h1 class="title">Iron Pang</h1>
+        <a href="#" id="start-button" class="start-button">Start Game</a>
+    </div>
+
+    <canvas id="main-canvas" width="1024" height="768"></canvas>
+    <script src="/assets/js/models/constants.js"></script>
+    <script src="/assets/js/models/explorer.js"></script>
+    <script src="/assets/js/models/background.js"></script>
+    <script src="/assets/js/models/bullet.js"></script>
+    <script src="/assets/js/models/harpoon.js"></script>
+    <script src="/assets/js/models/bubbles.js"></script>
+    <script src="/assets/js/models/bubbles50.js"></script>
+    <script src="/assets/js/models/game.js"></script>
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
+
